@@ -25,10 +25,10 @@
   animation-duration: 1s;
 }
 
-.navbar .color-active {
+.color-active {
   background-color: var(--navbar-color);
   padding: 20px 0 20px 0;
-  border-bottom: 2px solid #dc354638;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
 }
 
 .navbar .nav-link a {
@@ -112,11 +112,19 @@ header::after {
   .homepage .header-box {
     padding-top: 8rem;
   }
+
+  .burger-button {
+    background-color: white;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .homepage .header-box h1 {
     font-size: 3rem;
+  }
+
+  .burger-button {
+    background-color: white;
   }
 }
 
@@ -128,6 +136,10 @@ header::after {
   .homepage .header-box p {
     font-size: 14px;
   }
+
+  .burger-button {
+    background-color: white;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -137,6 +149,10 @@ header::after {
 
   .homepage .header-box p {
     font-size: 12px;
+  }
+
+  .burger-button {
+    background-color: white;
   }
 }
 /*STYLE HOMEPAGE HEADER*/
@@ -264,7 +280,7 @@ header::after {
   }
 
   .homepage .testimonial .swiper-slide .people {
-    justify-content: center;
+    justify-content: start;
   }
 }
 /*STYLE HOMEPAGE TESTIMONIAL*/
